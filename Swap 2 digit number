@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h> 
+#include <stdlib.h> 
+int main()
+{
+    char s[100]; 
+    scanf("%s", s);
+    if (strlen(s) >= 2) 
+    {
+        char firstChar = s[0];
+        char secondChar = s[1];
+        printf("%c%c\n", secondChar, firstChar);
+    }
+    else 
+    {
+        printf("STDOUT");
+    }
+
+    return 0;
+}
