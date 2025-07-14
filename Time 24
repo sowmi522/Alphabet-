@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int hours, minutes, seconds;
+
+    
+    scanf("%d %d %d", &hours, &minutes, &seconds);
+
+    
+    int total_seconds = seconds;
+    int total_minutes = minutes;
+    int total_hours = hours;
+
+
+    total_minutes += total_seconds / 60;
+    total_seconds %= 60;
+
+    
+    total_hours += total_minutes / 60;
+    total_minutes %= 60;
+
+  
+    printf("Total Number of hours is %d\n", total_hours);
+    printf("Total Number of minutes is %d\n", total_minutes);
+    printf("Total Number of seconds is %d\n", total_seconds);
+
+    return 0;
+}
