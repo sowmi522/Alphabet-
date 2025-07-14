@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a4sheet_cost, pen_cost, pencil_cost, eraser_cost;
+
+    
+    scanf("%d", &a4sheet_cost);
+    scanf("%d", &pen_cost);
+    scanf("%d", &pencil_cost);
+    scanf("%d", &eraser_cost);
+
+    
+    printf("Items Details\n");
+    printf("A4sheet:%d\n", a4sheet_cost);
+    printf("Pen:%d\n", pen_cost);
+    printf("Pencil:%d\n", pencil_cost);
+    printf("Eraser:%d\n", eraser_cost);
+
+    return 0;
+}
