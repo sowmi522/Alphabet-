@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int initialBalance;
+    int processType;
+    int amount;
+
+    scanf("%d", &initialBalance);
+    scanf("%d", &processType);
+    scanf("%d", &amount);
+
+    if (processType == 1) {
+        deposit 
+        initialBalance += amount;
+        printf("%d\n", initialBalance);
+    } else if (processType == 2) {
+         Withdrawal
+        if (amount <= initialBalance) {
+            initialBalance -= amount;
+            printf("%d\n", initialBalance);
+        } else {
+            printf("Insufficient Balance\n");
+        }
+    } else {
+         Invalid Input
+        printf("Invalid Input\n");
+    }
+
+    return 0;
+}
