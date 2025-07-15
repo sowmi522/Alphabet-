@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float float_val;
+    int square_val, base_val, power_val;
+
+    
+    scanf("%f", &float_val);
+    scanf("%d", &square_val);
+    scanf("%d", &base_val);
+    scanf("%d", &power_val);
+
+    
+    printf("%.0f\n", floor(float_val));
+
+    
+    printf("%.0f\n", ceil(float_val));
+
+    
+    printf("%.0f\n", sqrt(square_val));
+
+    
+    printf("%.0f\n", pow(base_val, power_val));
+
+    return 0;
+}
