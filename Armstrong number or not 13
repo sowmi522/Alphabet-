@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, originalN, remainder, result = 0;
+
+    scanf("%d", &n);
+
+    if (n < 100 || n > 999) {
+    }
+
+    originalN = n;
+
+    while (originalN != 0) {
+        remainder = originalN % 10;
+        result += pow(remainder, 3);
+        originalN /= 10;
+    }
+
+    if (result == n)
+        printf("Yes\n");
+    else
+        printf("No\n");
+
+    return 0;
+}
